@@ -9,7 +9,15 @@ const sequelize = new Sequelize(
   {
     host: config.host,
     dialect: config.dialect,
-  }
+    // logging: false
+    // "migrationStorage": "json",
+    // "migrationStoragePath": "migration.json",
+    // "migrationStorageTableName": "sample_meta",
+    // "migrationStorageTableSchema": "sample_schema"
+    migrationStorageTableName: "_migrations",
+    // logging: false,
+  },
+
 );
 
 sequelize

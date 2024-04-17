@@ -4,18 +4,16 @@ const alluser = db.allusers;
 
 module.exports = {
     allusers: async (req, res) => {
-      const allusers = await alluser.findAll({
-       
-      });
+      const allusers = await alluser.findAll();
   
       if (allusers) {
         res.status(200).json({
-          message: "Fetched allCategory",
+          message: "Fetched allUsers",
           category: allusers,
         });
       } else {
         res.status(404).json({
-          message: "Category not Found",
+          message: "User not Found",
         });
       }
     },
