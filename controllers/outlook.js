@@ -61,26 +61,26 @@
 
 
 
-const util = require('../util/util');
+// const util = require('../util/util');
 
-const testEmailOptions = {
-    from: process.env.EMAIL,
-    to: "dhanurvedhan.c@outlook.com", // sending to the same email as sender for testing purposes
-    subject: "Test Email",
-    text: "This is a test email sent from your Node.js application using nodemailer and Azure OAuth2 authentication.",
-  };
+// const testEmailOptions = {
+//     from: process.env.EMAIL,
+//     to: "dhanurvedhan.c@outlook.com", // sending to the same email as sender for testing purposes
+//     subject: "Test Email",
+//     text: "This is a test email sent from your Node.js application using nodemailer and Azure OAuth2 authentication.",
+//   };
 
-module.exports = {
-    outlookmail: async (req, res) => {
-          util.outlookmail().then(outlooktransporter => {
-            outlooktransporter.sendMail(testEmailOptions, function (err, data) {
-            if (err) {
-              console.log("Error " + err);
-            } else {
-              console.log("Email sent successfully");
-              res.json({ status: "Email sent to " + testEmailOptions.to });
-            }
-          });
-        });
-    }
-}
+// module.exports = {
+//     outlookmail: async (req, res) => {
+//           util.outlookmail().then(outlooktransporter => {
+//             outlooktransporter.sendMail(testEmailOptions, function (err, data) {
+//             if (err) {
+//               console.log("Error " + err);
+//             } else {
+//               console.log("Email sent successfully");
+//               res.json({ status: "Email sent to " + testEmailOptions.to });
+//             }
+//           });
+//         });
+//     }
+// }

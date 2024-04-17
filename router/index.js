@@ -7,15 +7,15 @@ const authenticate = require('../middlewares/authenticate');
  const util = require('../util/util');
 
 
-util.mailFunction().then(transporter => {
-    transporter.verify((err, success) => {
-      err
-        ? console.log(err)
-        : console.log(`=== Server is ready to take messages: ${success} ===`);
-    });
-  }).catch(error => {
-    console.error("Error in obtaining transporter:", error);
-  });
+// util.mailFunction().then(transporter => {
+//     transporter.verify((err, success) => {
+//       err
+//         ? console.log(err)
+//         : console.log(`=== Server is ready to take messages: ${success} ===`);
+//     });
+//   }).catch(error => {
+//     console.error("Error in obtaining transporter:", error);
+//   });
 
 // util.outlookmail().then(outlooktransporter => {
 //     outlooktransporter.verify((err, success) => {
@@ -60,7 +60,7 @@ router.route("/children").get(controllers.children).post(controllers.addchildren
 router.route("/registration").get(controllers.registrations).post(controllers.addRegistrations);
 router.route("/payments").get(controllers.allPayments).post(controllers.addPayments).put(controllers.updatePayments).delete(controllers.deletePayments);
 router.route("/eventcount").get(controllers.eventcount);
-router.route("/email").post(controllers.sendemail);
-router.route("/outlook").post(controllers.outlookmail);
+// router.route("/email").post(controllers.sendemail);
+// router.route("/outlook").post(controllers.outlookmail);
 
 module.exports = router;
