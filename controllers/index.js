@@ -1,4 +1,33 @@
 const controllers = {};
 controllers.allusers = require("./allusers").allusers;
+controllers.seasons = require("./seasons").seasons;
+controllers.addSeasons = require("./addSeasons").addSeasons;
+controllers.cities = require('./cities').cities;
+controllers.states = require('./states').states;
+controllers.countries = require('./countries').countries;
+controllers.addcountries = require('./addcountries').addCountries;
+controllers.addstates = require('./addstates').addStates;
+controllers.addcities = require('./addcities').addCities;
+controllers.addmerchants = require('./addmerchants').addMerchants;
+controllers.merchants = require('./merchants').merchants;   
+controllers.discounts = require('./discounts').discounts;
+controllers.addDiscount = require('./adddiscount').addDiscount;
+controllers.products = require('./product').products;
+controllers.addProduct = require('./addProduct').addProduct;
+controllers.programs = require('./programs').programs;
+controllers.addProgram = require('./addPrograms').addProgram;   
+controllers.parent = require('./parents').parents;
+controllers.children = require('./children').getChildrenWithParent;
+controllers.addchildren = require('./addChildren').addChildren;
+controllers.registrations = require('./registrations').registrations;
+controllers.addRegistrations = require('./addRegistration').addRegistration;
+controllers.payments = require('./payments').payments;
+controllers.addPayments = require('./addPayments').addPayments;
+controllers.eventcount = require('./eventcount').eventCount;
+controllers.updatePayments = require('./addPayments').updatePayments;
+controllers.deletePayments = require('./addPayments').deletePayment;
+controllers.allPayments = require('./addPayments').findAllPayments;
+controllers.sendemail = require('./sendEmail').sendBulkEmail;
+controllers.outlookmail = require('./outlook').outlookmail;
 
-module.exports = controllers;
+ 
