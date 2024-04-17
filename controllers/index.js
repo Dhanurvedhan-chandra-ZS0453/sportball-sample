@@ -30,4 +30,4 @@ controllers.allPayments = require('./addPayments').findAllPayments;
 controllers.sendemail = require('./sendEmail').sendBulkEmail;
 controllers.outlookmail = require('./outlook').outlookmail;
 
- 
+module.exports = controllers;
