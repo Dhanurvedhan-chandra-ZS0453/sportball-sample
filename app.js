@@ -1,6 +1,6 @@
 const env = require("dotenv").config();
 const express = require("express");
-const config = require("./config/config");
+const config = require("./config");
 const router = require("./router/index");
 
 

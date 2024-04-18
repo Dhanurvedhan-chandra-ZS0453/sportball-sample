@@ -8,10 +8,10 @@ const users = db.allusers;
 dotenv.config();
 
 const strategy = new Auth0Strategy({
-    domain: process.env.AUTH0_DOMAIN,
-    clientID: process.env.AUTH0_CLIENT_ID,
-    clientSecret: process.env.AUTH0_CLIENT_SECRET,
-    callbackURL: process.env.AUTH0_CALLBACK_URL
+    domain: 'dev-3s0j68qpfmtfkc23.us.auth0.com',
+    clientID: '8OFdywSeBqFb0o0Bx8Gm2d0RZDejq09y',
+    clientSecret: '_m1VG6NwxORJPd7E4-5mtoLgzoHhOaHCm4Z1kDmjXNQYRty6WCY8FAuE0yiL5Pzq',
+    callbackURL: 'http://localhost:3002/callback'
 }, async (accessToken, refreshToken, extraParams, profile, done) => {
     const profile_id = profile.id;
     const profile_name = profile._json.name !== '' ? profile._json.name : profile._json.nickname;

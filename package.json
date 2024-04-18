@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,10 @@
     "passport": "^0.7.0",
     "passport-auth0": "^1.4.4",
     "sequelize": "^6.37.1",
-    "tedious": "^17.0.0"
+    "tedious": "^17.0.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
