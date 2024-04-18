@@ -25,7 +25,7 @@ eval("const env = (__webpack_require__(/*! dotenv */ \"dotenv\").config)();\r\nc
   \*******************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("(__webpack_require__(/*! dotenv */ \"dotenv\").config)();\r\n\r\nmodule.exports = {\r\n  SERVER_PORT: '3002',\r\n  DB_PORT: '1433',\r\n  host: 'localhost',\r\n  database: 'sportball_sample',\r\n  username: 'sa',\r\n  password: 'Chennai@12345',\r\n  //  dialect: process.env.DIALECT,\r\n  dialect: 'mssql',\r\n  // pool: {\r\n  //   max: 5,\r\n  //   min: 0,\r\n  //   acquire: 30000,\r\n  //   idle: 10000,\r\n  // },\r\n};\n\n//# sourceURL=webpack://sportball-sample/./config.js?");
+eval("(__webpack_require__(/*! dotenv */ \"dotenv\").config)();\r\n\r\nmodule.exports = {\r\n  SERVER_PORT: '3002',\r\n  DB_PORT: '1433',\r\n  host: 'localhost',\r\n  database: 'sportball_sample',\r\n  username: 'sa',\r\n  password: 'Chennai@12345',\r\n  //  dialect: process.env.DIALECT,\r\n  dialect: 'mssql',\r\n  // pool: {\r\n  //   max: 5,\r\n  //   min: 0,\r\n  //   acquire: 30000,\r\n  //   idle: 10000, \r\n  // },\r\n};\n\n//# sourceURL=webpack://sportball-sample/./config.js?");
 
 /***/ }),
 
